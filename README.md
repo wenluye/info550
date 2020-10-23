@@ -19,7 +19,7 @@ for(p in pkgs){
 To execute the analysis, please follow the steps below:
 1. Download and save everything from this `info550` repository as a `.zip` file and unzip it to folder at your desired directory. 
 2. Please make sure you have successfully set your current working directory to the folfer you created in above step using the following code:
-```Ruby
+```ruby
 cd folder_name_where_you_saved_all_info550_files
 ````
 2. Download and save the `info550_project.Rmd` in the project folder to your desired directory. 
