@@ -4,15 +4,13 @@ My project analysis examines the personal exposure to PM2.5 and black carbon (BC
 
 To analyze the data you will need to install some `R` packages. These packages are `tidyverse`, `data.table`, `lubridate`, and `knitr`. The required packages can be installed using R commands as below:
 
-`
-installed_pkgs <- row.names(installed.packages())
+`installed_pkgs <- row.names(installed.packages())
 pkgs <- c("tidyverse", "data.table", "lubridate", "knitr")
 for(p in pkgs){
 	if(!(p %in% installed_pkgs)){
 		install.packages(p)
 	}
-}
-`
+}`
 
 # Execute the analysis
 
