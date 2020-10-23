@@ -21,7 +21,7 @@ To execute the analysis, please follow the steps below:
 2. Please make sure you have successfully set your current working directory to the folfer you created in above step using the following code:
 ```ruby
 cd folder_name_where_you_saved_all_info550_files
-````
+```
 2. Download and save the `info550_project.Rmd` in the project folder to your desired directory. 
 3. Open the `info550_project.Rmd` in `R`.
 4. In `{r load-data}` chunk, you may want to change filepath for `data.csv` in `fread()` or set your working directory using `setwd()` to where you saved the `data.csv`.
