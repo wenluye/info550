@@ -18,13 +18,12 @@ for(p in pkgs){
 
 To execute the analysis, please follow the steps below:
 1. Download and save everything from this `info550` repository as a `.zip` file and unzip it to folder at your desired directory. 
-2. Please make sure you have successfully set your current working directory to the folfer you created in above step using the following code:
-`
+2. Open `Terminal` or other Windows equivalent and make sure you successfully set your current working directory to the folfer you created in above step using the following code:
+```
 cd folder_name_where_you_saved_all_info550_files
-`
-2. Download and save the `info550_project.Rmd` in the project folder to your desired directory. 
-3. Open the `info550_project.Rmd` in `R`.
-4. In `{r load-data}` chunk, you may want to change filepath for `data.csv` in `fread()` or set your working directory using `setwd()` to where you saved the `data.csv`.
-5. Knit `info550_project.Rmd` in `R`, `R Studio` or run `Rscript -e "rmarkdown::render('info550_project.Rmd')"` in your terminal. 
-
-This will create a file called `info550_project.html` output in your directory that contains the results.
+```
+3. Then run the following code to generate the report.
+```
+make
+```
+This will create a file called `report.html` output in your directory that contains the results.
