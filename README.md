@@ -26,4 +26,8 @@ cd folder_name_where_you_saved_all_info550_files
 ```bash
 make
 ```
+4. You can also check for other useful options with:
+```bash
+make help
+```
 This will create a file called `report.html` output in your directory that contains the results.
