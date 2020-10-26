@@ -13,6 +13,10 @@ for(p in pkgs){
 	}
 }
 ```
+Or you can install all R packages using the following code:
+```bash
+make install
+```
 
 # Execute the analysis
 
