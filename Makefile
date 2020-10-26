@@ -13,12 +13,10 @@ figures/pm_bc_correlation.png: R/make_figures.R clean_data/data.csv
 	R/make_figures.R
 
 ## phony options:
-.PHONY: help
+.PHONY: help clean data and create figures 
 ##	make help: check help
-help: 
-	@echo "report.html           : Generate final analysis report."
-	@echo "data.csv              : Clean raw_data.csv by removing negative values."
-	@echo "pm_bc_correlation.png : Make a scatter plot to show the correlation between PM and BC."
+help: Makefile
+	@sed -n 's/^##//p' $<
 
 ##	make install: install required R packages 
 install:
@@ -26,6 +24,14 @@ install:
 
 ##	make report: generate final html report
 report: report.html
+
+##	make figures: generate PM and BC correlation plot
+figures: figures/pm_bc_correlation.png
+
+##	make cleanall: clean all output files
+cleanall:
+	rm clean_data/data.csv figures/pm_bc_correlation.png report.html
+
 
 
 
