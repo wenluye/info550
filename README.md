@@ -24,7 +24,7 @@ cd folder_name_where_you_saved_all_info550_files
 ```
 3. Then run the following code to generate the report.
 ```bash
-make
+make report
 ```
 4. You can also check for other useful options with:
 ```bash
