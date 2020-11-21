@@ -21,9 +21,9 @@ If you are going to generate the analysis report using the developed docker imag
 
 # Execute the analysis
 
-To execute the analysis, please follow the steps below:
-1. Download and save everything from this `info550` repository as a `.zip` file and unzip it to folder at your desired directory. 
-2. Open `Terminal` or other Windows equivalent and make sure you successfully set your current working directory to the folfer you created in above step using the following code:
+To execute the analysis with ', please follow the steps below:
+1. Download and save everything from this `info550` repository as a `.zip` file and unzip it to a folder in your desired directory. 
+2. Open `Terminal` or the Windows equivalent and make sure you successfully set your current working directory to the folfer you created in above step using the following code:
 ```bash
 cd folder_name_where_you_saved_all_info550_files
 ```
