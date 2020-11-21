@@ -32,6 +32,9 @@ figures: figures/pm_bc_correlation.png
 cleanall:
 	rm clean_data/data.csv figures/pm_bc_correlation.png report.html
 
+##	make build: build the docker image
+build:
+	docker build -t info550_project .
 
 
 
