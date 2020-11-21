@@ -17,6 +17,7 @@ Or you can install all R packages using the following code:
 ```bash
 make install
 ```
+If you are going to generate the analysis report using the developed docker image, you don't have to worry about the R package installation. Please find more details in "Execute the analysis" section. 
 
 # Execute the analysis
 
