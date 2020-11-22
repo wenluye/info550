@@ -17,22 +17,31 @@ Or you can install all R packages using the following code:
 ```bash
 make install
 ```
-If you are going to generate the analysis report using the developed docker image, you don't have to worry about the R package installation. Please find more details in "Execute the analysis" section. 
+If you are going to generate the analysis report using the developed docker image, you don't have to worry about the R packages installation. Please find more details in "Execute the analysis" section. 
 
 # Execute the analysis
 
-To execute the analysis with ', please follow the steps below:
+To execute the analysis with 'docker', please follow the instruction below:
 1. Download and save everything from this `info550` repository as a `.zip` file and unzip it to a folder in your desired directory. 
-2. Open `Terminal` or the Windows equivalent and make sure you successfully set your current working directory to the folfer you created in above step using the following code:
+2. Open `Terminal` or the Windows equivalent and make sure you successfully set your current working directory to the folder you created in above step that contains all the files from this `info550` repository using the following code.
 ```bash
 cd folder_name_where_you_saved_all_info550_files
 ```
-3. Then run the following code to generate the report.
+3. Then download the latest version of `wenluye/info550_project` use the following code.
 ```bash
-make report
+docker pull wenluye/info550_project
 ```
-4. You can also check for other useful options with:
+4. Now use the `docker run` to start the container and generate the report and remember to "mount" your local working directory to the `project` directory in the container with the code below.
 ```bash
-make help
+docker run -v path/to/current_working_directory:/project wenluye/info550_project
 ```
-This will create a file called `report.html` output in your directory that contains the results.
+5. This will create a file called `report.html` output in your local working directory. 
+```bash
+ls
+open report.html
+```
+6. You can also build/modify the `info550_project` docker image locally use:
+```bash
+make build 
+```
+
