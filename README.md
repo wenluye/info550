@@ -35,7 +35,7 @@ docker pull wenluye/info550_project
 ```bash
 docker run -v path/to/current_working_directory:/project wenluye/info550_project
 ```
-5. This will create a file called `report.html` output in your local working directory. 
+5. This will create a file called `report.html` output in your local working directory. You can open the report in your web browser with the code bekow. 
 ```bash
 ls
 open report.html
