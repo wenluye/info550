@@ -44,4 +44,3 @@ open report.html
 ```bash
 make build 
 ```
-
